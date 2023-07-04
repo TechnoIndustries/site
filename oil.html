@@ -195,7 +195,8 @@ font-size: 90px;
 
 .co p{
 
- 
+   position: relative;
+  
     color:white;
     z-index: 1000;
     padding: 40px;
@@ -242,6 +243,10 @@ font-size: 90px;
     top:-15px;
     z-index: -10;
 }
+ .pd{
+position: relative;
+top:-100px;
+}
 /*RESPONSIVE*/
 @media screen and (max-width:600px){
 
@@ -258,8 +263,11 @@ font-size: 90px;
         margin:0;
         width:100%;
     }
+    .co .pd{
+       
+    }
     .co p{
-      top:3450px;
+ 
       width: 100%;
       margin-left: 0%;
     }
@@ -279,13 +287,13 @@ font-size: 90px;
     height:900px;
  }
     .co h2{
-    top: -170px;
+    top: -140px;
   }
     .co h3{
-        top:150px;
+        top:100px;
     }
     .co .pp{
-        top:150px;
+        top:100px;
     }
     .co img{
         left:0px;
@@ -447,7 +455,7 @@ body{
  <img src="im\co.png">
  <h1>Cocunut Oil</h1>
  <h2>Production:</h2>
- <p>The coconut oil is traditionally extracted from copra. The copra can be obtained by separating the coconut meat from the whole coconut shell followed by sun drying and smoke drying for about 6 to 8 days.
+ <p class="pd">The coconut oil is traditionally extracted from copra. The copra can be obtained by separating the coconut meat from the whole coconut shell followed by sun drying and smoke drying for about 6 to 8 days.
 </p>
 <h3>Quality:</h3>
 <P class="pp">Coconut oil is 100% fat, 80-90% of which is saturated fat. This gives it a firm texture at cold or room temperatures. Fat is made up of smaller molecules called fatty acids, and there are several types of saturated fatty acids in coconut oil.</P>
