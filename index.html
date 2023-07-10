@@ -1,5 +1,8 @@
 <html>
-    <head>
+<head>                      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>                                                         
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
@@ -14,7 +17,9 @@
 margin: 0;
 padding: 0; overflow-x: hidden;
 }
-     
+ .prod h1{
+    overflow-y: hidden
+  }   
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
         .navbar-nav a{
             padding: 4px;
@@ -31,50 +36,7 @@ font-weight: bold;
   overflow-x: hidden;
 }
 
-.bod{
-  background-color: #31ad5c;
-  position: relative;
-  top:10px;
 
-}.bod h1{
-  color: white;
-  font-weight: 700;
-  text-align: center;
-  font-family: 'poppins',sans-serif;
-  text-transform: uppercase;
-}
-.bal p{
-  color:white;
-  font-weight: 500;
-  text-align: center;
-  background-color: #2faa5a;
-
-}
-
-
-.prod {
- 
-    text-align: center;
-    overflow-x: hidden;
-   overflow-y:auto;
-   scroll-behavior: none;
-}
-
-.prod h1{
-  margin-top: 20%;
-  margin-bottom: 10px;
-    font-family: 'poppins',sans-serif;
-    position: relative;
-    font-size: 50px;
-    overflow-y:hidden;
-    text-transform: uppercase;
-    text-decoration: underline 7px;
-    font-weight: bolder;
-}
-
-.card{
-    box-shadow: 5px 10px 18px #00291d;overflow-y:hidden;
-}
 
 .loc{
    background-color: #ffd700;
@@ -195,41 +157,170 @@ transition: all ease 2s;
     opacity:1;
 }
 
-.hm {
-  height:39vh;
-  margin-left: 14%;
-  margin-right: 14%;
-  margin-top: 5%;;
-  width:70%;
+.carousel-caption{
+  font-size: 20px;
+  font-weight: 700;font-family: 'poppins',sans-serif;
+ width:70%;
+ float: right;z-index: 100;
+
+
 }
 
-.hero h1{
-text-align: center;
-font-weight: 700;
+.content{
+  height:50vh;margin-bottom: 10%;
 }
-.hero p{
+.content .d{
+height:50vh;
+width: 100%;
+}
+.bt{
+    padding:5px;
+   padding-left: 10px;
+   padding-right: 10px;
+    color:white;
+    background-color: rgb(0, 114, 38);
+    font-weight: 700;
+    border-style: none;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    top:-10px;
+}
+.bt:hover{
+  background-color: rgb(0, 177, 59);
+}
+.carousel-item:after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.7);
+}
+.abt img{
+  width: 250px;position: relative;
+  height: 250px;
+  border-radius: 50%;margin-left: auto;margin-right: auto;  display: block;margin-bottom: 4px;z-index: 100;
+}
+.abt {
+  background-color: #87d8abb9;width:330px;;margin-left: auto;margin-right: auto; border-radius: 20px;position: relative;z-index: 100;
+}
+.abt p{
+  position:relative;top:-15px;
+  padding: 7px;
   text-align: center;
-  margin-left: 2%;
-  margin-right: 2%;
-  font-weight: 500;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
 }
-@keyframes float {
-  0% {
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    transform: translatey(0px);
-  }
-  50% {
-    box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-    transform: translatey(-20px);
-  }
-  100% {
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    transform: translatey(0px);
-  }}
+.abb{
+  overflow-y: hidden;
+  height:50px; 
+  font-size: 50px;
+  font-family: 'poppins',sans-serif;
+  font-weight: 700; 
+}
+.b{
+  margin-top: 10px;
+  font-size: 50px;
+  font-family: 'poppins'sans-serif;
+  font-weight: 700;
+  overflow-y: hidden;
+}
+.care{
+    background-color: rgb(46, 150, 46);
+    padding: 20px;
+    border-radius: 20px;  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); margin-bottom: 10px;
+}
+.care img{
+    width:250px;
+    height: 250px;
+    display: block;
+    margin: auto;
+}
+.care h1{
+    text-align: center;
+color:white;
+font-weight: 700;overflow-y: hidden;
+}
+.prod {
+ 
+ text-align: center;
+ overflow-x: hidden;
+overflow-y:auto;
+scroll-behavior: none;
+}
+
+.prod h1{overflow-y: hidden;
+margin-top: 20%;
+margin-bottom: 10px;
+ font-family: 'poppins',sans-serif;
+ position: relative;
+ font-size: 50px;
+ overflow-y:hidden;
+ text-transform: uppercase;
+ text-decoration: underline 7px;
+ font-weight: bolder;
+}
+
+.card{
+ box-shadow: 5px 10px 18px #00291d;overflow-y:hidden;
+}
+.who h2{
+  overflow-y: hidden;
+}
+.who h1{
+  overflow-y: hidden;
+}
+.card-title{
+  overflow-y: hidden;
+}
+.abt h6{
+  font-size: 50px;position: relative;
+ overflow-y: hidden;
+}
+.who {
+  width: 95%;
+  display: block;margin-left: auto;margin-right: auto;
+  text-align: center;
+  font-size: 20px;
+  background-color: #ffd90073;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
 @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) {
+    .carousel-control-prev{
+      position: relative;
+      left:-80px;
+      top:300px;
+    }
+    .carousel-control-next{
+      right:-80px;
+      top:50px;
+    }
+    .prod {position: relative;;top:-200px;overflow-y: hidden;}
+.row{
+  overflow-y: hidden;
+}
+    .abt{
+  width: 80%;
+  height: 50%;
+  margin-top: 2%;
+}
+.abt img{
+  float:left;
+  top:25px;
+  margin-left: 2%;
+}
+.abt p{
+  top:70px;
+}
     .footer{
   height: 40vh;
 }
@@ -256,30 +347,7 @@ font-weight: 700;
     .carde-text{
       top:90px;
     } 
-.hero h1,p{
-  float: left;;
-}
-.hero h1{
-  overflow-y: hidden;
-  margin-top: 10%;
-  margin-left: 15%;
-  font-size: 90px;
-}
-.bod h1{
-  margin-bottom: 10px;overflow-y: hidden;
-}
-.bal p{
-  text-align: center;
-  margin-left: 20%;
-  margin-right: 20%;
-  font-size: 30px;
-}
-.hero p{
-  position: relative;margin-left: 5%;padding-left:0px;
-  top:-150px;font-size: 40px;
-  width:700px;
-  text-align: start;
-}
+
 .own{
   position: relative;
     border-radius: 50%;
@@ -294,23 +362,64 @@ font-weight: 700;
     left:320px;overflow-y: hidden;
   }
 
+  .bt{
+    padding:15px;
 
- .navbar-nav{
-  margin-bottom: 0%;
- }
- .prod{
-  overflow-y: hidden;
- }
-#sd{
-position: relative;
-top:px;
-z-index: 100;
+    color:white;
+    background-color: rgb(0, 114, 38);
+    font-weight: 700;
+    border-style: none;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    top:-10px;
 }
-.prod {position: relative;;top:-200px;overflow-y: hidden;}
-.row{
-  overflow-y: hidden;
+.carousel-caption{
+  font-size: 50px;
+  font-weight: 900;font-family: 'poppins',sans-serif;
+ width:70%;
+ float: right;
+
+
 }
 
+.content{
+  height:90vh;
+}
+.content .d{
+height:90vh;
+width: 100%;
+}
+.who {
+  position: relative;top:0px;
+  width: 50%;
+  display: block;margin-left: auto;margin-right: auto;
+  text-align: center;
+  font-size: 20px;
+  background-color: #ffd90073;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.abt p{
+position: relative;top:0px;font-size: 18px;
+}
+.abt h6{
+  font-size: 50px;position: relative;
+ overflow-y: hidden;
+}
+.abt{
+  position: relative;
+  top:-100px;
+}
+.prod {
+  position: relative;
+  top:-20px;
+}
+.prod h1{
+  top:-100px;
+}
 }
   
     </style>
@@ -330,7 +439,7 @@ z-index: 100;
                         <a href="drip.html" class="nav-item nav-link">Irrigation <br>products</a>
                         <a href="oil.html" class="nav-item nav-link">Cooking oil <br> products</a>
                         <a href="ac.html" class="nav-item nav-link " >Home cleaning agents <br>& Others </a>
-                        
+                        <a href="in.html" class="nav-item nav-link active">Become a <br>Investor</a>
                         <a href="index.html" class="nav-item nav-link active">home</a>
                     </div>
                     <div class="navbar-nav ms-auto">
@@ -341,14 +450,7 @@ z-index: 100;
         </nav>
     </div>
 <section class="hero">
-<img src="im/logo.png" class="hm">
-<h1>TECHNO</h1>
-<p>"To be successful, you have to have your heart in your business, and your business in your heart."</p>
-</section>
-<Section class="bod">
-  <h1>Our Motto</h1>
-  <div class="bal"><p>A company is essentially an artificial person—also known as corporate personhood—in that it is an entity separate from the individuals who own, manage, and support its operations. Companies are generally organized to earn a profit from business activities, though some may be structured as nonprofit charities.
-  </p></div>
+
 </Section>
     <script>
         window.addEventListener ('scroll' , reveal);
@@ -370,76 +472,198 @@ z-index: 100;
         }
     }
     </script>
- <svg  id="sd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#31ad5c" fill-opacity="1" d="M0,192L48,170.7C96,149,192,107,288,117.3C384,128,480,192,576,186.7C672,181,768,107,864,90.7C960,75,1056,117,1152,154.7C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-<section class="prod" scroll="no">
-   
-       <h1>Our <span style='color:#003021; font-weight:700 ;'>Products</span></h1>
-  <center>
-       <div class="row reveal ">
-        <Div class="col-lg-6 col-sm-12 ">
-            <div class="card text-white bg-success mb-3" style="width: 18rem;">
-                <img class="card-img-top" src="im\d1.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Drip Pipe and Fittings</h5>
-                  <p class="card-text"> Premium quality drip pipe<br>and drip fittings </p>
-                  <a href="#" class="btn btn-success">know more</a>
-                </div>
-              </div>
-                </Div>
-                <Div class="col-lg-6 col-sm-12">
-                    <div class="card text-white bg-success mb-3" style="width: 18rem;">
-                        <img class="card-img-top" src="im\oi.png" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Vegetable Oil</h5>
-                          <p class="card-text">Healthy annd pure  Cocunut and Groundnut oil</p>
-                          <a href="#" class="btn btn-success">know more</a>
-                        </div>
-                      </div>
-                        </Div> 
-                        </div>
-                        <center>
-                            <div class="row reveal">
- <Div class="col-lg-12 col-sm-12 ">
-    <div class="card text-white bg-success mb-3" style="width: 18rem;">
-        <img class="card-img-top" src="im\drip.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Drip Irrigation system</h5>
-          <p class="card-text">Efficient Irrigation <br> system</p>
-          <a href="#" class="btn btn-success">know more</a>
+<section class="content">
+  <div id="carouselExampleControls" class="carousel slide  " data-ride="carousel">
+
+    <div class="carousel-inner lg-w-70">
+      <div class="carousel-item active">
+        <img class="d" src="im/sli1.jpg" alt="First slide">
+        <div class="carousel-caption ">
+          <h1>Drip Pipes & Fittings
+           </h1>
+          <p> Efficient irrigation solutions for greener landscapes.</p>
+          <a href="tele:+91 9945631341"> <button class="bt"><i class="fa fa-phone" style="font-size: 24px;position: relative;top:5px;margin-right: 3px;"></i>+91 9945631341</button></a></center>
+          <a href="drip.html"> <input type="button" value ="Know more" class="bt"></a></center>
         </div>
       </div>
-        </Div>
+      <div class="carousel-item">
+        <img class="d" src="im/sli3.jpg" alt="Second slide">
+        <div class="carousel-caption  d-md-block d-sm-flex">
+          <h1>Vegetable Oil Manufacturing
+          </h1>
+          <p>  From nature to your kitchen, pure and healthy cooking oils.</p>
+          <a href="tele:+91 9945631341"> <button class="bt"><i class="fa fa-phone" style="font-size: 24px;position: relative;top:5px;margin-right: 3px;"></i>+91 9945631341</button></a></center>
+          <a href="oil.html"> <input type="button" value ="Know more" class="bt"></a></center>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d" src="im/sli2.jpg" alt="Third slide">
+        <div class="carousel-caption  d-md-block d-sm-flex ">
+          <h1>Cleaning Agents Manufacturing
+          </h1>
+          <p>Powerful cleaning agents for a spotless and hygienic environment.
+          </p>
+          <a href="tele:+91 9945631341"> <button class="bt"><i class="fa fa-phone" style="font-size: 24px;position: relative;top:5px;margin-right: 3px;"></i>+91 9945631341</button></a></center>
+          <a href="ac.html"> <input type="button" value ="know more" class="bt"></a></center>
+        </div>
+      </div>
    
+ 
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
     </div>
+  
+</center>
+</section>
+
+<Section class="abt">
+
+  <img src="im/logo.png">
+  <center><h6>About us</h6></center>
+ <p>At Techno Industries, we pride ourselves on being a leading provider of
+  innovative solutions in three diverse industries: Drip Pipes & Fittings, Vegetable
+  Oil Manufacturing, and Cleaning Agents Manufacturing. With a commitment
+  to excellence, sustainability, and customer satisfaction, we strive to deliver
+  products that enhance lives and contribute to a better world. With
+  cutting-edge technology, a skilled workforce, and a passion for quality, we
+  ensure that our customers receive superior products that meet their specific
+  needs. Discover Techno Industries and experience reliability, performance,
+  and value in every product.
+  </p>
+  </Section>
+  <center><h1 class="b">Our Business Divisions
+  </h1></center>
+  <section class="prode">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="care">
+                    <img src="im/pipi.png">
+                  <h1>Techno Drip Irrigation </h1>
+               
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="care">
+                    <img src="im/oili.png">
+                  <h1>Techno food cooking oil </h1>
+              
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="care">
+                    <img src="im/rei.png">
+                  <h1>Techno plastic recycling </h1>
+                  
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="care">
+                    <img src="im/pai.png">
+                  <h1>Techno Paint mix solvents </h1>
+               
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="prod" scroll="no">
+   
+  <h1>Our <span style='color:#003021; font-weight:700 ;'>Products</span></h1>
+<center>
+  <div class="row reveal ">
+   <Div class="col-lg-6 col-sm-12 ">
+       <div class="card text-white bg-success mb-3" style="width: 18rem;">
+           <img class="card-img-top" src="im\d1.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Drip Pipe and Fittings</h5>
+             <p class="card-text"> Premium quality drip pipe<br>and drip fittings </p>
+             <a href="#" class="btn btn-success">know more</a>
+           </div>
+         </div>
+           </Div>
+           <Div class="col-lg-6 col-sm-12">
+               <div class="card text-white bg-success mb-3" style="width: 18rem;">
+                   <img class="card-img-top" src="im\oi.png" alt="Card image cap">
+                   <div class="card-body">
+                     <h5 class="card-title">Vegetable Oil</h5>
+                     <p class="card-text">Healthy annd pure  Cocunut and Groundnut oil</p>
+                     <a href="#" class="btn btn-success">know more</a>
+                   </div>
+                 </div>
+                   </Div> 
+                   </div>
+                   <center>
+                       <div class="row reveal">
+<Div class="col-lg-12 col-sm-12 ">
+<div class="card text-white bg-success mb-3" style="width: 18rem;">
+   <img class="card-img-top" src="im\drip.jpg" alt="Card image cap">
+   <div class="card-body">
+     <h5 class="card-title">Drip Irrigation system</h5>
+     <p class="card-text">Efficient Irrigation <br> system</p>
+     <a href="#" class="btn btn-success">know more</a>
+   </div>
+ </div>
+   </Div>
+
+</div>
 </center>
 <div class="row reveal">
-        
- <Div class="col-lg-6 col-sm-12">
-                                <div class="card text-white bg-success mb-3" style="width: 18rem;">
-                                    <img class="card-img-top" src="im\tur.png" alt="Card image cap">
-                                    <div class="card-body">
-                                      <h5 class="card-title">Turpentine Oil</h5>
-                                      <p class="card-text">Mineral Turpentine Oil <br>Extract </p>
-                                      <a href="#" class="btn btn-success">know more</a>
-                                    </div>
-                                  </div>
-                                    </Div> 
-                                   
-                                    <Div class="col-lg-6 col-sm-12">
-                                        <div class="card text-white bg-success mb-3" style="width: 18rem;">
-                                            <img class="card-img-top" src="im\acid.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                              <h5 class="card-title">Cleaning agents</h5>
-                                              <p class="card-text">Strong acid cleaning agent , Good Quality </p>
-                                              <a href="#" class="btn btn-success">know more</a>
-                                            </div>
-                                          </div>
-                                            </Div> 
-                                      
-    </Div>
+   
+<Div class="col-lg-6 col-sm-12">
+                           <div class="card text-white bg-success mb-3" style="width: 18rem;">
+                               <img class="card-img-top" src="im\tur.png" alt="Card image cap">
+                               <div class="card-body">
+                                 <h5 class="card-title">Turpentine Oil</h5>
+                                 <p class="card-text">Mineral Turpentine Oil <br>Extract </p>
+                                 <a href="#" class="btn btn-success">know more</a>
+                               </div>
+                             </div>
+                               </Div> 
+                              
+                               <Div class="col-lg-6 col-sm-12">
+                                   <div class="card text-white bg-success mb-3" style="width: 18rem;">
+                                       <img class="card-img-top" src="im\acid.jpg" alt="Card image cap">
+                                       <div class="card-body">
+                                         <h5 class="card-title">Cleaning agents</h5>
+                                         <p class="card-text">Strong acid cleaning agent , Good Quality </p>
+                                         <a href="#" class="btn btn-success">know more</a>
+                                       </div>
+                                     </div>
+                                       </Div> 
+                                 
+</Div>
 
 </center>
 </section>
+<Section class="who">
+  <h1>Why Choose Us</h1>
+  <p><h2>Quality Assurance:</h2>
+    We prioritize uncompromising quality in every product we manufacture.
+    Our rigorous quality control ensures reliable and long-lasting performance.
+    <h2>Innovation and Sustainability:</h2>
+    We constantly innovate to provide cutting-edge solutions that align with
+    environmental sustainability.
+    Our products are designed to minimize waste and maximize efficiency.
+   <h2> Customer-Centric Approach:</h2>
+    We understand your unique requirements and strive to exceed your
+    expectations.
+    Our dedicated customer support team ensures prompt assistance and
+    satisfaction.
+  <h2> Industry Expertise:</h2> 
+    With years of experience in our respective fields, we bring deep industry
+    knowledge to deliver exceptional products.
+    Our expertise enables us to provide tailored solutions for various applications.
+    Choose Techno Industries for reliable products, sustainable practices,
+    exceptional service, and expertise you can trust.
+    </p>
+</Section>
 <svg id="d" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="1" d="M0,128L48,133.3C96,139,192,149,288,138.7C384,128,480,96,576,106.7C672,117,768,171,864,176C960,181,1056,139,1152,122.7C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 <section class="loc">
     <center><h1>Our <span style='color:white; text-decoration: overline underline white;'>Location</h1></center>
@@ -462,7 +686,10 @@ z-index: 100;
    <h2>Email:bharath6251@gmail.com</h2>
    <h2>Phone no:<a href="tele:+91 9945631341">+91 9945631341</a></h2>
    <center><h3>Techno industries<br>Powered by techno industries</h3> <a href="#top">Return to the top</a></center>
-  <div class='foo'><img class="own" src="im\him.jpg"></div>
+  <div class='foo'><img class="own" src="im\him.jpg">
+  
+  
+  </div>
 </section>
 
 </body>
